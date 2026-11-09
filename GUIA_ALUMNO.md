@@ -13,6 +13,8 @@ Las tareas marcadas con **★** son **extra**: hazlas solo si terminas el resto.
 
 En cada paso tienes la **sintaxis** de la orden: tú decides qué poner en lo que está en MAYÚSCULAS. Para consultar opciones, usa el **resumen de órdenes** ([Ubuntu](resumen-ordenes/Ordenes_Ubuntu.pdf) · [Windows](resumen-ordenes/Ordenes_Windows.pdf)), `man ORDEN` o `Get-Help ORDEN -Examples`.
 
+**Después de la clase:** comprueba tu práctica en casa con el corrector y compárala con las [soluciones](SOLUCIONES.md).
+
 **Cómo pedir ayuda:** pon el pósit **rosa** en la pantalla. Cuando termines una parte, pon el **amarillo**.
 
 ---

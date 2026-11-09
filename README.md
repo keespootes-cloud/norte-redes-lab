@@ -10,11 +10,14 @@ Este repositorio trae un **corrector automático**: lo ejecutas en tu máquina v
 
 **👉 [Guía del alumno paso a paso](GUIA_ALUMNO.md)**: empieza por aquí.
 
+> **✅ Clase terminada (9 de noviembre de 2026).** Ya están publicadas las **[soluciones](SOLUCIONES.md)**: la práctica de Ubuntu y Windows resuelta y explicada, los fallos del reto y cómo encontrarlos, y las respuestas del quiz. Antes de mirarlas, intenta comprobar tu práctica con el corrector.
+
 | Material | Enlace |
 |---|---|
 | Guía paso a paso | [GUIA_ALUMNO.md](GUIA_ALUMNO.md) |
-| Presentación de la clase (PowerPoint) | [presentacion/Norte_Redes_UF2_Administracion_software_base.pptx](presentacion/Norte_Redes_UF2_Administracion_software_base.pptx) |
-| Presentación de la clase (PDF) | [presentacion/Norte_Redes_UF2_Administracion_software_base.pdf](presentacion/Norte_Redes_UF2_Administracion_software_base.pdf) |
+| **Soluciones** (después de la clase) | [SOLUCIONES.md](SOLUCIONES.md) |
+| Presentación completa, con soluciones (PowerPoint) | [presentacion/Norte_Redes_UF2_Administracion_software_base.pptx](presentacion/Norte_Redes_UF2_Administracion_software_base.pptx) |
+| Presentación completa, con soluciones (PDF) | [presentacion/Norte_Redes_UF2_Administracion_software_base.pdf](presentacion/Norte_Redes_UF2_Administracion_software_base.pdf) |
 | Resumen de órdenes más importantes · Ubuntu (PDF) | [resumen-ordenes/Ordenes_Ubuntu.pdf](resumen-ordenes/Ordenes_Ubuntu.pdf) |
 | Resumen de órdenes más importantes · Windows (PDF) | [resumen-ordenes/Ordenes_Windows.pdf](resumen-ordenes/Ordenes_Windows.pdf) |
 
