@@ -15,6 +15,10 @@ En cada paso tienes la **sintaxis** de la orden: tú decides qué poner en lo qu
 
 **Después de la clase:** comprueba tu práctica en casa con el corrector y compárala con las [soluciones](SOLUCIONES.md).
 
+> **⚠️ Hasta dónde se llegó en clase (9/11/2026):** se hicieron la **Práctica 1 (Ubuntu)** y el **reto en parejas**. La **Práctica 2 (Windows) no dio tiempo**: habla con tu profesor o profesora para saber cómo continuar.
+
+**📖 Tema:** en cada paso verás el apartado del PDF **«UF2 01.1 · Administración de software base»** que lo explica. Léelo antes o después de hacer el paso.
+
 **Cómo pedir ayuda:** pon el pósit **rosa** en la pantalla. Cuando termines una parte, pon el **amarillo**.
 
 ---
@@ -32,6 +36,8 @@ Así, si algo se rompe, vuelves atrás en 10 segundos.
 Repite lo mismo con tu máquina de **Windows** antes de la práctica 2.
 
 ### 0.2 Abre una terminal en Ubuntu
+
+📖 Tema: 1.1.1 El intérprete de órdenes · 1.1.2 Órdenes básicas.
 
 Pulsa `Ctrl + Alt + T`.
 
@@ -87,6 +93,8 @@ Eres el administrador de sistemas de **Norte Redes S.L.** Tienes que dar de alta
 
 ### Paso 1 · Crear los tres grupos, cada uno con su GID
 
+📖 Tema: 1.2.5 Creación de grupos · 1.1.5 `/etc/group`.
+
 ```bash
 sudo groupadd -g GID GRUPO
 ```
@@ -94,6 +102,8 @@ sudo groupadd -g GID GRUPO
 **Comprueba** con `getent group GRUPO`. Debe salir una línea con el formato `grupo:x:GID:`.
 
 ### Paso 2 · El kit de bienvenida
+
+📖 Tema: 1.4 Perfiles de usuario locales.
 
 Todo lo que hay en `/etc/skel` se copia al home de cada usuario **nuevo**. Crea ahí un fichero `LEEME.txt` con un texto de bienvenida, **antes** de crear los usuarios.
 
@@ -105,6 +115,8 @@ echo "TEXTO" | sudo tee RUTA_DEL_FICHERO
 
 ### Paso 3 · Crear los tres usuarios
 
+📖 Tema: 1.2.1 `useradd` · 1.1.3 `/etc/passwd`.
+
 ```bash
 sudo useradd OPCIONES USUARIO
 ```
@@ -115,6 +127,8 @@ Cada usuario necesita: **carpeta personal** (home), la shell **`/bin/bash`**, su
 
 ### Paso 4 · Ponerles contraseña
 
+📖 Tema: 1.2.2 `passwd` · 1.1.4 `/etc/shadow`.
+
 ```bash
 sudo passwd USUARIO
 ```
@@ -122,6 +136,8 @@ sudo passwd USUARIO
 Te pide la contraseña nueva dos veces.
 
 ### Paso 5 · Ana es la administradora
+
+📖 Tema: 1.2.6 `usermod`.
 
 En Ubuntu, los administradores son los miembros del grupo `sudo`. Añade a ana a ese grupo **sin quitarle sus otros grupos**: mira las opciones de `usermod`.
 
@@ -139,6 +155,8 @@ Cuando veas **«Básico: 20 / 20 … 100 %»** y **«Práctica básica completa�
 
 ### Extra ★ (solo si te sobra tiempo)
 
+📖 Tema: 1.1.4 `/etc/shadow` (caducidad) · 1.2.4 Deshabilitar usuarios.
+
 - **★ 6 · luis** debe **cambiar su contraseña** la primera vez que entre. Pista: `chage`. Para comprobarlo, entra como él con `su - luis` (escríbelo solo): te pedirá su contraseña actual y después una **nueva y distinta**. Para volver a tu usuario: `exit`.
 - **★ 7 · La contraseña de marta** caduca cada **90 días**, con un **mínimo de 1 día** entre cambios y **aviso 7 días** antes. Pista: `chage`; compruébalo con `sudo chage -l marta`.
 - **★ 8 · El becario** (grupo `desarrollo`): **sin acceso a la terminal** y con la **cuenta caducando el 31/12/2026**. Ponle contraseña. Pista: hay una shell que no deja entrar. Comprueba con `su - becario` que no puede usar la terminal.
@@ -148,6 +166,8 @@ Cuando veas **«Básico: 20 / 20 … 100 %»** y **«Práctica básica completa�
 ## Reto en parejas · auditoría (25 min, Ubuntu)
 
 Se hace **justo después de la práctica 1**, antes del descanso.
+
+📖 Tema: 1.1.3 a 1.1.5 (los tres ficheros) · 1.2.3 `userdel` · 1.2.7 Monitorización.
 
 1. **Saboteador** (en su máquina, con la instantánea hecha):
    ```bash
@@ -170,6 +190,10 @@ Se hace **justo después de la práctica 1**, antes del descanso.
 ---
 
 ## Práctica 2 · Windows (40 min)
+
+> **No se hizo en clase por falta de tiempo.** Pregunta a tu profesor o profesora antes de hacerla.
+
+📖 Tema: 3.1 Usuarios de Windows · 3.2 Contraseñas · 3.4 Grupos · 3.5 UAC.
 
 1. Haz la instantánea `antes-UF2` de tu máquina de Windows (paso 0.1).
 2. Dentro de la máquina virtual, descarga el ZIP del laboratorio y descomprímelo.
@@ -215,6 +239,8 @@ Add-LocalGroupMember -SID SID -Member USUARIO
 Igual que el paso anterior, pero con el grupo **Administradores**.
 
 ### Paso 5 · Directiva de contraseñas
+
+📖 Tema: 3.2 Gestión de contraseñas.
 
 Configura el equipo para que las contraseñas tengan **12 caracteres como mínimo**, **caduquen a los 90 días** y la cuenta se **bloquee 15 minutos tras 5 intentos fallidos** (ventana de observación de 15 minutos). Todo se hace con una sola orden: `net accounts` y sus opciones. Comprueba el resultado con `net accounts`.
 
@@ -263,6 +289,7 @@ Pistas: `Set-LocalUser`, `net user` y `Disable-LocalUser`. **Pruébalo de verdad
 ## Para seguir en casa
 
 - Este repositorio es público: puedes repetir la práctica cuando quieras.
-- **OverTheWire Bandit** (overthewire.org/wargames/bandit): un juego gratuito para aprender la terminal de Linux superando niveles.
+- Todas las fuentes y enlaces para ampliar están en [FUENTES.md](FUENTES.md).
+- **OverTheWire Bandit** (https://overthewire.org/wargames/bandit/): un juego gratuito para aprender la terminal de Linux superando niveles.
 
 *Norte Redes S.L. y sus empleados son ficticios. Usa estos scripts solo en tus máquinas virtuales de prácticas.*
