@@ -200,6 +200,7 @@ Todos los scripts están **comentados línea a línea en español**: ábrelos co
 
 ## Avisos
 
+- **Material elaborado por el docente a título personal con fines educativos; no es una publicación oficial del centro.**
 - **Norte Redes S.L. y sus empleados son ficticios.** Cualquier parecido con empresas o personas reales es casual.
 - **Uso educativo.** Ejecuta estos scripts solo en máquinas virtuales de prácticas que sean tuyas. `sabotaje.sh` crea cuentas inseguras a propósito y se niega a funcionar fuera de una máquina virtual.
 - Los correctores solo leen la configuración del sistema; no envían nada a ningún sitio.
